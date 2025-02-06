@@ -1,0 +1,97 @@
+/* Property CSS */
+
+:root {
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-size: 16px;
+  --color-gray: #9ca3af;
+  --color-gray-black: #53565a;
+  --bg-color: #242424;
+  --color-primary: #67b8cc;
+  --color-white: #ffffff;
+  --header-height: 4.5rem;
+}
+
+/* Reset */
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  background-color: var(--bg-color);
+  color: var(--color-white);
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  transition: all 0.5s ease-out;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+a:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+a:visited {
+  color: var(--color-white);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
