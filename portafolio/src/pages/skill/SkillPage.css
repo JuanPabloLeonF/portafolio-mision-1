@@ -1,0 +1,123 @@
+.skill {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.container-divition-skill {
+    width: 8%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--color-gray);
+}
+
+.container-divition-skill h4 {
+    color: var(--color-gray);
+    rotate: -90deg;
+}
+
+.linear-skill {
+    width: 0.2rem;
+    height: 30%;
+    background-color: var(--color-gray)
+}
+
+.container-info-skill {
+    width: 42%;
+    height: 80%;
+    color: var(--color-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.container-info-skill h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.container-list-skill ul {
+    column-count: 3;
+    column-gap: 5rem;
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.container-list-skill li {
+    break-inside: avoid;
+    margin-bottom: 0.5rem;
+}
+
+.container-chekbox-skill {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--bg-color);
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 0.4rem 0 var(--color-primary);
+}
+
+.btn-skill {
+    border: none;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 8rem;
+    color: var(--color-white);
+}
+
+.btn-skill:hover {
+    background-color: var(--color-primary);
+    color: var(--color-black);
+}
+
+.container-images-skill {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    height: 80%;
+}
+
+.container-img-skill-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    box-shadow: 0 0 0.4rem 0 var(--color-white);
+}
+
+.container-img-skill-info:hover {
+    opacity: 0.75;
+    box-shadow: 0 0 2rem 0 var(--color-primary);
+}
+
+.container-img-skill-info img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}

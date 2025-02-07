@@ -1,11 +1,12 @@
 
-import { HomePage } from "../../pages/home/HomePage"
+import { RouterProvider } from "react-router-dom"
 import "./MainComponent.css"
+import { router } from "../../routers/RoutersPage"
 
 export const MainComponent = () => {
     return (
         <main className="main">
-            <HomePage />
+            <RouterProvider router={router} />
         </main>
     )
 }

@@ -1,11 +1,12 @@
 .home {
     width: 100%;
-    height: 100%;
+    height: calc(100vh - var(--header-height));
     background-image: url("/bg-img.jpg");
     background-size: cover;
     background-position: 0vmin 0vmin;
     background-repeat: no-repeat;
     position: relative;
+    overflow: hidden;
 }
 
 .container-info {
@@ -39,6 +40,11 @@
     margin-top: 0.5rem;
 }
 
+.strong-dev {
+    color: var(--color-primary);
+}
+
+
 .btn-contact {
     font-size: 1.5rem;
     font-weight: 500;
@@ -57,4 +63,37 @@
     background-color: var(--color-primary);
     transition: all 0.5s ease-out;
     cursor: pointer;
+}
+
+.container-contact-network {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    width: 10%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-img-network {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid 2px var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img-network  img {
+    width: 85%;
+    height: 85%;
+}
+
+.linear {
+    width: 0.2rem;
+    height: 30%;
+    background-color: var(--color-primary);
 }

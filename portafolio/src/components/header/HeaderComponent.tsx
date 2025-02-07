@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import "./HeaderComponent.css"
 
 export const HeaderComponent = () => {
@@ -7,21 +8,36 @@ export const HeaderComponent = () => {
                 <img src="/logo.png" alt="logo" />
             </div>
             <nav className="container-nav">
-                <a href="" className="link-menu">
+                <NavLink
+                    to="/"
+                    className={({ isActive }) => (isActive ? "activate" : "link-menu")}
+                >
                     INICIO
-                </a>
-                <a href="" className="link-menu">
+                </NavLink>
+                <NavLink
+                    to="/about"
+                    className={({ isActive }) => (isActive ? "activate" : "link-menu")}
+                >
                     SOBRE MI
-                </a>
-                <a href="" className="link-menu">
+                </NavLink>
+                <NavLink
+                    to="/skill"
+                    className={({ isActive }) => (isActive ? "activate" : "link-menu")}
+                >
                     HABILIDADES
-                </a>
-                <a href="" className="link-menu">
+                </NavLink>
+                <NavLink
+                    to="/profile"
+                    className={({ isActive }) => (isActive ? "activate" : "link-menu")}
+                >
                     PERFIL
-                </a>
-                <a href="" className="link-menu">
+                </NavLink>
+                <NavLink
+                    to="/projects"
+                    className={({ isActive }) => (isActive ? "activate" : "link-menu")}
+                >
                     PROYECTOS
-                </a>
+                </NavLink>
             </nav>
         </header>
     )

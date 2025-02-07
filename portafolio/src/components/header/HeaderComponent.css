@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--color-gray-black);
+    background-color: var(--color-bg-nav);
     width: 100%;
     height: var(--header-height);
     display: flex;
@@ -36,4 +36,5 @@
 .link-menu:hover {
     color: var(--color-primary);
     text-decoration: line-through;
+    scale: 1.1;
 }
