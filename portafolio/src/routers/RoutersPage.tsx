@@ -4,6 +4,7 @@ import { FooterComponent } from "../components/footer/FooterComponent"
 import { AboutPage } from "../pages/about/AboutPage"
 import { HeaderComponent } from "../components/header/HeaderComponent"
 import { SkillPage } from "../pages/skill/SkillPage"
+import { ProfilePage } from "../pages/profile/ProfilePage"
 
 export const router = createBrowserRouter([
     {
@@ -32,5 +33,15 @@ export const router = createBrowserRouter([
                 <FooterComponent />
             </>
         )
-    }
+    },
+    {
+        path: "/profile",
+        element: (
+            <>
+                <HeaderComponent />
+                <ProfilePage />
+                <FooterComponent />
+            </>
+        )
+    },
 ])

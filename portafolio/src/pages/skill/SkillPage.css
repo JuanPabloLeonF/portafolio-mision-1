@@ -82,7 +82,8 @@
     color: var(--color-white);
 }
 
-.btn-skill:hover {
+.btn-skill:hover,
+.btn-skill.btn-active {
     background-color: var(--color-primary);
     color: var(--color-black);
 }
@@ -107,12 +108,7 @@
     border-radius: 0.5rem;
     background-color: var(--bg-color);
     cursor: pointer;
-    box-shadow: 0 0 0.4rem 0 var(--color-white);
-}
-
-.container-img-skill-info:hover {
-    opacity: 0.75;
-    box-shadow: 0 0 2rem 0 var(--color-primary);
+    border: solid 1px var(--color-primary);
 }
 
 .container-img-skill-info img {
@@ -120,4 +116,99 @@
     height: 80%;
     object-fit: cover;
     object-position: center;
+}
+
+.container-img-skill-info:has(img[src*="python.svg"]):hover {
+    box-shadow: 0 4px 20px #a9ab37;
+    border: solid 1px #a9ab37;
+}
+
+.container-img-skill-info:has(img[src*="django.svg"]):hover {
+    box-shadow: 0 4px 20px #187450;
+    border: solid 1px #187450;
+}
+
+.container-img-skill-info:has(img[src*="flask.svg"]):hover {
+    box-shadow: 0 4px 20px #bcebd9;
+    border: solid 1px #bcebd9;
+}
+
+.container-img-skill-info:has(img[src*="html.svg"]):hover {
+    box-shadow: 0 4px 20px #E34F26;
+    border: solid 1px #E34F26;
+}
+
+.container-img-skill-info:has(img[src*="css.svg"]):hover {
+    box-shadow: 0 4px 20px #1572B6;
+    border: solid 1px #1572B6;
+}
+
+.container-img-skill-info:has(img[src*="javascript.svg"]):hover {
+    box-shadow: 0 4px 20px #F7DF1E;
+    border: solid 1px #F7DF1E;
+}
+
+.container-img-skill-info:has(img[src*="angular.svg"]):hover {
+    box-shadow: 0 4px 20px #DD1B16;
+    border: solid 1px #DD1B16;
+}
+
+.container-img-skill-info:has(img[src*="react.svg"]):hover {
+    box-shadow: 0 4px 20px #61DAFB;
+    border: solid 1px #61DAFB;
+}
+
+.container-img-skill-info:has(img[src*="postgresql.svg"]):hover {
+    box-shadow: 0 4px 20px #336791;
+    border: solid 1px #336791;
+}
+
+.container-img-skill-info:has(img[src*="mysql.svg"]):hover {
+    box-shadow: 0 4px 20px #0A7E61;
+    border: solid 1px #0A7E61;
+}
+
+.container-img-skill-info:has(img[src*="mongo.svg"]):hover {
+    box-shadow: 0 4px 20px #0A7E61;
+    border: solid 1px #0A7E61;
+}
+
+.container-img-skill-info:has(img[src*="docker.svg"]):hover {
+    box-shadow: 0 4px 20px #1572B6;
+    border: solid 1px #1572B6;
+}
+
+.container-img-skill-info:has(img[src*="kubernetes.svg"]):hover {
+    box-shadow: 0 4px 20px #0A7E61;
+    border: solid 1px #0A7E61;
+}
+
+.container-img-skill-info:has(img[src*="java.svg"]):hover {
+    box-shadow: 0 4px 20px #9e231f;
+    border: solid 1px #9e231f;
+}
+
+.container-img-skill-info:has(img[src*="springboot.svg"]):hover {
+    box-shadow: 0 4px 20px #0A7E61;
+    border: solid 1px #0A7E61;
+}
+
+.container-img-skill-info:has(img[src*="sass.svg"]):hover {
+    box-shadow: 0 4px 20px #CC6699;
+    border: solid 1px #CC6699;
+}
+
+.container-img-skill-info:has(img[src*="linux.svg"]):hover {
+    box-shadow: 0 4px 20px #FCC624;
+    border: solid 1px #FCC624;
+}
+
+.container-img-skill-info:has(img[src*="git.svg"]):hover {
+    box-shadow: 0 4px 20px #F05032;
+    border: solid 1px #F05032;
+}
+
+.container-img-skill-info:has(img[src*="github.svg"]):hover {
+    box-shadow: 0 4px 20px #3e2d8d; 
+    border: solid 1px #3e2d8d;
 }
