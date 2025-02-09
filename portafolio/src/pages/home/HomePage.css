@@ -97,3 +97,37 @@
     height: 30%;
     background-color: var(--color-primary);
 }
+
+@media (width <= 768px) {
+    .home {
+        background-position:  center;
+    }
+
+    .container-info { 
+        width: 90vw;
+        height: calc(70vh - var(--header-height));
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        text-align: center;
+        background-color: var(--color-bg-transparent);
+        backdrop-filter: blur(5px);
+    }
+
+    .container-contact-network{
+        bottom: 1%;
+        right: calc(34% - 3rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-direction:  row;
+        width: 50%;
+        height: 10%;
+    }
+
+    .linear {
+        display: none;
+    }
+}

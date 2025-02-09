@@ -115,6 +115,8 @@
     padding: 0 1rem;
     border: 1px solid var(--color-gray);
     box-shadow: 0 0 5px var(--color-gray);
+    text-transform: uppercase;
+    font-size: 0.9rem;
 }
 
 .container-inputs input:focus {
@@ -132,6 +134,9 @@
     outline: none;
     border: 1px solid var(--color-gray);
     box-shadow: 0 0 5px var(--color-gray);
+    resize: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
 }
 
 .form-contact form textarea:focus {

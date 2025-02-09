@@ -11,6 +11,7 @@
   --color-bg-nav: #2b3336;
   --header-height: 4.5rem;
   --color-black: #000000;
+  --color-bg-transparent: rgba(0, 0, 0, 0.178);
 }
 
 /* Reset */

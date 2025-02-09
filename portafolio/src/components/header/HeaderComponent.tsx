@@ -1,13 +1,17 @@
 import { NavLink } from "react-router-dom"
 import "./HeaderComponent.css"
+import { useState } from "react";
 
 export const HeaderComponent = () => {
+
+    const [activateButton, setActivateButton] = useState(false);
+
     return (
         <header className="header">
             <div className="container-img-logo">
                 <img src="/logo.png" alt="logo" />
             </div>
-            <nav className="container-nav">
+            <nav className={ `container-nav ${activateButton ? "container-nav" : "container-nav-hidden"}` }>
                 <NavLink
                     to="/"
                     className={({ isActive }) => (isActive ? "activate" : "link-menu")}
@@ -39,6 +43,16 @@ export const HeaderComponent = () => {
                     CONTACTO
                 </NavLink>
             </nav>
+            <div
+                onClick={() => {setActivateButton(!activateButton)}}
+                className="container-img-menu"
+             >
+                {
+                    activateButton ? 
+                    <img src="/menu-burguer.svg" alt="menu" /> : 
+                    <img src="/close.svg" alt="close" />
+                }
+            </div>
         </header>
     )
 }
