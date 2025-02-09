@@ -33,10 +33,10 @@ export const HeaderComponent = () => {
                     PERFIL
                 </NavLink>
                 <NavLink
-                    to="/projects"
+                    to="/contact"
                     className={({ isActive }) => (isActive ? "activate" : "link-menu")}
                 >
-                    PROYECTOS
+                    CONTACTO
                 </NavLink>
             </nav>
         </header>

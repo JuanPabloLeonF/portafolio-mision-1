@@ -5,6 +5,7 @@ import { AboutPage } from "../pages/about/AboutPage"
 import { HeaderComponent } from "../components/header/HeaderComponent"
 import { SkillPage } from "../pages/skill/SkillPage"
 import { ProfilePage } from "../pages/profile/ProfilePage"
+import { ContactPage } from "../pages/contact/ContactPage"
 
 export const router = createBrowserRouter([
     {
@@ -41,6 +42,15 @@ export const router = createBrowserRouter([
                 <HeaderComponent />
                 <ProfilePage />
                 <FooterComponent />
+            </>
+        )
+    },
+    {
+        path: "/contact",
+        element: (
+            <>
+                <HeaderComponent />
+                <ContactPage />
             </>
         )
     },

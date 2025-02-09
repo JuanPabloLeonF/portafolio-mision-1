@@ -14,7 +14,6 @@ export const SkillPage = () => {
                 <h4>HABILIDADES</h4>
                 <div className="linear-skill"></div>
             </article>
-
             <article className="container-info-skill">
                 <h2>¿Cuáles son mis habilidades de programación?</h2>
                 <div className="container-list-skill">

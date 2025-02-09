@@ -1,13 +1,21 @@
+import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 
 export const HomePage = () => {
+
+    const navigate = useNavigate();
+
     return (
         <section className="home">
             <article className="container-info">
                 <h3>Hola</h3>
                 <h1>SOY JUAN PABLO LEON</h1>
                 <h2> <strong className="strong-dev">Desarrollador</strong> Backend</h2>
-                <button className="btn-contact" type="button">Contactame</button>
+                <button
+                 onClick={() => {navigate("/contact")}}
+                 className="btn-contact" 
+                 type="button"
+                 >Contactame</button>
             </article>
             <article className="container-contact-network">
                 <a href="https://www.linkedin.com/" target="_blank">
