@@ -22,7 +22,7 @@ export const ProfilePage = () => {
             </div>
             <article className="container-info-profile">
                 <div className="container-img-profile">
-                    <img src={activateButton ? "/graduation.svg" : "/experience.svg"} alt="profile" />
+                    <img src={activateButton ? `${import.meta.env.BASE_URL}graduation.svg` : `${import.meta.env.BASE_URL}experience.svg`} alt="profile" />
                 </div>
                 {
                     activateButton ? (
@@ -31,7 +31,7 @@ export const ProfilePage = () => {
                                 <div className="container-information">
                                     <div className="container-date">
                                         <div className="container-img-date">
-                                            <img src="/calendar.svg" alt="calendar" />
+                                            <img src={`${import.meta.env.BASE_URL}calendar.svg`} alt="calendar" />
                                         </div>
                                         <h3>2022 - 2024</h3>
                                     </div>
@@ -53,7 +53,7 @@ export const ProfilePage = () => {
                             <div className="container-information">
                                 <div className="container-date">
                                     <div className="container-img-date">
-                                        <img src="/calendar.svg" alt="calendar" />
+                                        <img src={`${import.meta.env.BASE_URL}calendar.svg`} alt="calendar" />
                                     </div>
                                     <h3>2022 - 2025</h3>
                                 </div>

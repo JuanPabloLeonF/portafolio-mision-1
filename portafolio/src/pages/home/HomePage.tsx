@@ -20,17 +20,17 @@ export const HomePage = () => {
             <article className="container-contact-network">
                 <a href="https://www.linkedin.com/" target="_blank">
                     <div className="container-img-network">
-                            <img src="/linkedin-black.png" alt="linkedin" />
+                            <img src={`${import.meta.env.BASE_URL}linkedin-black.png`} alt="linkedin" />
                     </div>
                 </a>
                 <a href="https://www.whatsapp.com/" target="_blank">
                     <div className="container-img-network">
-                            <img src="/whatsapp.png" alt="whatsapp" />
+                            <img src={`${import.meta.env.BASE_URL}whatsapp.png`} alt="whatsapp" />
                     </div>
                 </a>
                 <a href="https://www.github.com/" target="_blank">
                     <div className="container-img-network">
-                            <img src="/github-border.png" alt="github" />
+                            <img src={`${import.meta.env.BASE_URL}github-border.png`} alt="github" />
                     </div>
                 </a>
                 <div className="linear"></div>

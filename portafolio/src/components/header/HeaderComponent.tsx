@@ -9,7 +9,7 @@ export const HeaderComponent = () => {
     return (
         <header className="header">
             <div className="container-img-logo">
-                <img src="/logo.png" alt="logo" />
+                <img src={`${import.meta.env.BASE_URL}logo.png`} alt="logo" />
             </div>
             <nav className={ `container-nav ${activateButton ? "container-nav" : "container-nav-hidden"}` }>
                 <NavLink

@@ -52,22 +52,22 @@ export const ContactPage = () => {
                     <div className="container-list-img-contact">
                         <a href="http://whatsapp.com" target="_blank" rel="noopener noreferrer">
                             <div className="img-container-contact">
-                                <img src="/whatsapp.svg" alt="whatsapp" />
+                                <img src={`${import.meta.env.BASE_URL}whatsapp.svg`} alt="whatsapp" />
                             </div>
                         </a>
                         <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
                             <div className="img-container-contact">
-                                <img src="/linkedin.svg" alt="linkedin" />
+                                <img src={`${import.meta.env.BASE_URL}linkedin.svg`} alt="linkedin" />
                             </div>
                         </a>
                         <a href="http://github.com" target="_blank" rel="noopener noreferrer">
                             <div className="img-container-contact">
-                                <img src="/github-svg.svg" alt="github" />
+                                <img src={`${import.meta.env.BASE_URL}github-svg.svg`} alt="github" />
                             </div>
                         </a>
                         <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
                             <div className="img-container-contact">
-                                <img src="/facebook.svg" alt="facebook" />
+                                <img src={`${import.meta.env.BASE_URL}facebook.svg`} alt="facebook" />
                             </div>
                         </a>
                     </div>

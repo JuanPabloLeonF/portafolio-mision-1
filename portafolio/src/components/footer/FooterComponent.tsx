@@ -6,12 +6,12 @@ export const FooterComponent = () => {
             <section className="container-images">
                 <div className="container-img">
                     <a href="https://www.linkedin.com/" target="_blank">
-                        <img src="/linkedin.png" alt="linkedin" />
+                        <img src={`${import.meta.env.BASE_URL}linkedin.png`} alt="linkedin" />
                     </a>
                 </div>
                 <div className="container-img">
                     <a href="https://www.github.com/" target="_blank">
-                        <img src="/github.png" alt="github" />
+                        <img src={`${import.meta.env.BASE_URL}github.png`} alt="github" />
                     </a>
                 </div>
             </section>

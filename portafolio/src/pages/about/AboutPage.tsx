@@ -4,7 +4,7 @@ export const AboutPage = () => {
     return (
         <section className="about">
             <article className="container-img-about">
-                <img src="/img-about.svg" alt="programacion" />
+                <img src={`${import.meta.env.BASE_URL}img-about.svg`} alt="programacion" />
             </article>
             <article className="container-divition-about">
                 <h4>SOBRE MI</h4>
