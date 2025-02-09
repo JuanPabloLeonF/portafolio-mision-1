@@ -1,7 +1,7 @@
 .about {
     background-color: var(--color-bg-nav);
     width: 100%;
-    height: calc(100vh - var(--header-height));
+    height: calc(100% - var(--header-height));
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -26,12 +26,12 @@
 
 .container-divition-about {
     width: 8%;
-    height: 80%;
+    height: 28rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     color: var(--color-gray);
     padding-top: 1.9rem;
 }
@@ -44,12 +44,16 @@
 
 .container-divition-about h4 {
     rotate: -90deg;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    width: 10rem;
+    text-align: end;
 }
 
 .container-info-about {
     width: 50%;
     height: 80%;
     color: var(--color-gray);
+    font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .container-info-about h2 {
@@ -70,4 +74,52 @@
 
 .container-info-about ul li {
     margin-bottom: 0.7rem;
+}
+
+@media (width <= 768px) {
+
+    .about {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+    .container-img-about {
+        width: 80%;
+        height: 25rem;
+    }
+
+    .container-divition-about {
+        padding: 0;
+        margin: 0;
+        width: 80%;
+        height: 1rem;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 0.8rem;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+
+    .container-divition-about h4 {
+        rotate: 0deg;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        width: 5rem;
+        text-align: start;
+    }
+
+    .linear-about {
+        width: 5rem;
+    }
+    
+    .container-info-about {
+        margin-top: 1rem;
+        width: 80%;
+        height: 100%;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+    }
 }

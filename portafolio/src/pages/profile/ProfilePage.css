@@ -1,17 +1,18 @@
 .profile {
     background-color: var(--bg-color);
     width: 100%;
-    height: calc(100vh - var(--header-height));
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 2rem 0;
 }
 
 .container-button-profile {
     background-color: var(--color-bg-nav);
     width: 22%;
-    height: 8%;
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,4 +195,137 @@
 
 .information p {
     color: var(--color-gray);
+}
+
+@media (width <= 768px) {
+
+    .profile {
+        width: 100%;
+        height: calc(100vh - var(--header-height));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        padding-top: 1.5rem;
+    }
+
+    .container-button-profile {
+        width: 70%;
+    }
+
+    .container-button-profile .button {
+        width: 40%;
+    }
+
+    .container-info-profile {
+        width: 90%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        gap: 2rem;
+    }
+
+   .container-linear-profile {
+        display: none;
+   }
+   
+   .container-info-profile-1-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+   .container-img-profile {
+        padding-top: 1rem;
+   }
+
+   .container-info-profile-2-item .container-information,
+    .container-information {
+        width: 100%;
+        height: 100%;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .container-date {
+        position: static;
+    }
+    .information {
+        width: 100%;
+        height: 50%;
+        border-top-right-radius: 0.5rem;
+    }
+}
+
+@media (width <= 1050px) {
+    .profile {
+        width: 100%;
+        height: calc(100% - var(--header-height));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        padding-top: 1.5rem;
+    }
+
+    .container-button-profile {
+        width: 70%;
+        max-width: 20rem;
+    }
+
+    .container-button-profile .button {
+        width: 40%;
+    }
+
+    .container-info-profile {
+        width: 90%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+   .container-linear-profile {
+        display: none;
+   }
+   
+   .container-info-profile-1-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+   .container-info-profile-2-item {
+        margin-top: 3rem;
+   }
+
+   .container-img-profile {
+        padding-top: 1rem;
+   }
+
+   .container-info-profile-2-item .container-information,
+    .container-information {
+        width: 100%;
+        height: 100%;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .container-date {
+        position: static;
+    }
+    .information {
+        width: 100%;
+        height: 50%;
+        border-top-right-radius: 0.5rem;
+    }
 }
