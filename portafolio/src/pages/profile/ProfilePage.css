@@ -11,7 +11,7 @@
 
 .container-button-profile {
     background-color: var(--color-bg-nav);
-    width: 22%;
+    width: 30%;
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@
     padding: 0.5rem;
     border-radius: 1.5rem;
     cursor: pointer;
-    width: 8rem;
+    width: 40%;
 }
 
 .button:hover,
@@ -38,15 +38,20 @@
 }
 
 .container-info-profile {
-    width: 80%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    gap: 1rem;
     align-items: center;
+    justify-items: center;
+    margin-top: 1rem;
 }
 
 .container-img-profile {
+    grid-row: 1/1;
+    grid-column: 1/1;
     width: 4rem;
     height: 4rem;
     display: flex;
@@ -64,19 +69,40 @@
 .container-info-profile-1 {
     width: 100%;
     height: 100%;
+    grid-row: 2/2;
+    grid-column: 1/1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    justify-items: start;
+    align-items: center;
+}
+
+.container-info-profile-1-item {
+    width: 53%;
+    height: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
-    align-items: start;
-    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+.container-info-profile-1-item:nth-child(2) {
+    justify-self: end;
+    align-self: center;
+}
+
+.container-info-profile-1-item:nth-child(2) .container-date {
+    left: unset;
+    right: 0;
 }
 
 .container-information {
-    width: 37.2rem;
-    height: 12rem;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: end;
     align-items: end;
     position: relative;
     cursor: pointer;
@@ -84,7 +110,7 @@
 
 .container-date {
     position: absolute;
-    top: 0;
+    top: -12%;
     left: 0;
     color: var(--color-gray);
     display: flex;
@@ -104,8 +130,8 @@
 }
 
 .information {
-    width: 85%;
-    height: 85%;
+    width: 90%;
+    height: 100%;
     border: 1px solid var(--color-primary);
     border-top-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -123,7 +149,7 @@
     text-overflow: ellipsis;
     display: -webkit-box; 
     -webkit-box-orient: vertical; 
-    -webkit-line-clamp: 4;      
+    -webkit-line-clamp: 5;      
     white-space: normal; 
 }
 
@@ -219,11 +245,22 @@
     }
 
     .container-info-profile {
-        width: 90%;
+        width: 100%;
         height: 100%;
         padding: 0;
         margin: 0;
-        gap: 2rem;
+        gap: 0;
+    }
+
+    .container-info-profile-1 {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding-bottom: 1rem;
     }
 
    .container-linear-profile {
@@ -232,100 +269,41 @@
    
    .container-info-profile-1-item {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 2rem;
    }
 
    .container-img-profile {
         padding-top: 1rem;
    }
 
-   .container-info-profile-2-item .container-information,
-    .container-information {
-        width: 100%;
-        height: 100%;
-        position: static;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
+    .container-date {
+        left: 0;
+    }
+    
+    .container-info-profile-1-item:nth-child(2) .container-date {
+        left: 0;
+        right: unset;
     }
 
-    .container-date {
-        position: static;
-    }
     .information {
         width: 100%;
-        height: 50%;
+        height: 100%;
         border-top-right-radius: 0.5rem;
+        max-height: 12rem;
+        align-self: flex-start;
+    }
+
+    .information h2 {
+        align-self: flex-start;
+    }
+
+    .information p {
+        -webkit-line-clamp: 4;      
     }
 }
 
-@media (width <= 1050px) {
-    .profile {
-        width: 100%;
-        height: calc(100% - var(--header-height));
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0;
-        padding-top: 1.5rem;
-    }
-
-    .container-button-profile {
-        width: 70%;
-        max-width: 20rem;
-    }
-
-    .container-button-profile .button {
-        width: 40%;
-    }
-
-    .container-info-profile {
-        width: 90%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        gap: 2rem;
-        padding-bottom: 2rem;
-    }
-
-   .container-linear-profile {
-        display: none;
-   }
-   
-   .container-info-profile-1-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-   }
-
-   .container-info-profile-2-item {
-        margin-top: 3rem;
-   }
-
-   .container-img-profile {
-        padding-top: 1rem;
-   }
-
-   .container-info-profile-2-item .container-information,
-    .container-information {
-        width: 100%;
-        height: 100%;
-        position: static;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
-
-    .container-date {
-        position: static;
-    }
-    .information {
-        width: 100%;
-        height: 50%;
-        border-top-right-radius: 0.5rem;
-    }
-}

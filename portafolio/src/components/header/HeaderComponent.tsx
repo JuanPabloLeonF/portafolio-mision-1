@@ -49,8 +49,8 @@ export const HeaderComponent = () => {
              >
                 {
                     activateButton ? 
-                    <img src="/menu-burguer.svg" alt="menu" /> : 
-                    <img src="/close.svg" alt="close" />
+                    <img src={`${import.meta.env.BASE_URL}menu-burguer.svg`} alt="menu" /> : 
+                    <img src={`${import.meta.env.BASE_URL}close.svg`} alt="close" />
                 }
             </div>
         </header>

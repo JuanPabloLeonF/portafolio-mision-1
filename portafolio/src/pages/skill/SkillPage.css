@@ -49,15 +49,11 @@
 }
 
 .container-list-skill ul {
-    column-count: 3;
+    column-count: 2;
     column-gap: 5rem;
     list-style-type: disc;
     padding-left: 2rem;
     font-size: clamp(0.7rem, 4vw, 1rem);
-
-    @media (width <= 1050px) {
-        column-count: 2;
-    }
 }
 
 .container-list-skill li {

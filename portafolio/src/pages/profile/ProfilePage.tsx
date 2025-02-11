@@ -49,29 +49,29 @@ export const ProfilePage = () => {
                                     </div>
                                 </div>
                             </div>
-                        <div className="container-info-profile-2-item">
-                            <div className="container-information">
-                                <div className="container-date">
-                                    <div className="container-img-date">
-                                        <img src={`${import.meta.env.BASE_URL}calendar.svg`} alt="calendar" />
+                            <div className="container-info-profile-1-item">
+                                <div className="container-information">
+                                    <div className="container-date">
+                                        <div className="container-img-date">
+                                            <img src={`${import.meta.env.BASE_URL}calendar.svg`} alt="calendar" />
+                                        </div>
+                                        <h3>2022 - 2025</h3>
                                     </div>
-                                    <h3>2022 - 2025</h3>
-                                </div>
-                                <div className="container-linear-profile">
-                                    <div className="container-radius-profile"></div>
-                                    <div className="linear-profile"></div>  
-                                </div>
-                                <div className="information">
-                                    <h2>CURSOS CORTOS</h2>
-                                    <p>
-                                        A lo largo de mi formacion como aprendiz <strong className="strong-dev">SENA </strong>
-                                        he tomado cursos cortos en diversos temas desde tecnologias como <strong className="strong-dev">React</strong>, <strong className="strong-dev">Angular</strong>, <strong className="strong-dev">Python</strong> entre otros, 
-                                        pero tambien he realizado cursos sobre <strong className="strong-dev">Patrones de diseño</strong> y <strong className="strong-dev">Arquitectura de Software</strong>. 
+                                    <div className="container-linear-profile">
+                                        <div className="container-radius-profile"></div>
+                                        <div className="linear-profile"></div>  
+                                    </div>
+                                    <div className="information">
+                                        <h2>CURSOS CORTOS</h2>
+                                        <p>
+                                            A lo largo de mi formacion como aprendiz <strong className="strong-dev">SENA </strong>
+                                            he tomado cursos cortos en diversos temas desde tecnologias como <strong className="strong-dev">React</strong>, <strong className="strong-dev">Angular</strong>, <strong className="strong-dev">Python</strong> entre otros, 
+                                            pero tambien he realizado cursos sobre <strong className="strong-dev">Patrones de diseño</strong> y <strong className="strong-dev">Arquitectura de Software</strong>. 
 
-                                    </p>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                     ): (
                         <div className="container-info-profile-1">

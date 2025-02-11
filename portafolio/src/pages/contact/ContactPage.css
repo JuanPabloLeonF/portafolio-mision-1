@@ -86,33 +86,28 @@
 }
 
 .form-contact form {
-    width: 80%;
+    width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @media (width <= 1024px) {
-        height: 100%;
-        width: 100%;
-    }
+    padding-left: 1rem;
 }
 
 .container-inputs {
-    width: 80%;
+    width: 100%;
     height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
 }
 
 .container-inputs input {
     outline: none;
     border: none;
-    width: 12rem;
+    width: 47%;
     height: 70%;
     background-color: transparent;
     color: var(--color-white);
@@ -122,10 +117,6 @@
     box-shadow: 0 0 5px var(--color-gray);
     text-transform: uppercase;
     font-size: 0.9rem;
-
-    @media (width <= 1024px) {
-        width: 50%;
-    }
 }
 
 .container-inputs input:focus {
@@ -134,8 +125,8 @@
 }
 
 .form-contact form textarea {
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    height: 12rem;
     padding: 1rem 1rem;
     background-color: transparent;
     color: var(--color-white);
@@ -164,14 +155,9 @@
     background-color: var(--color-bg-nav);
     box-shadow: 0 0 5px var(--color-gray);
     position: absolute;
-    bottom: 18%;
-    left: 18%;
+    bottom: 12%;
+    left: 4%;
     color: var(--color-white);
-
-    @media (width <= 1024px) {
-        bottom: -12%;
-        left: 15%;
-    }
 }
 
 .form-contact form button:hover {
@@ -207,7 +193,7 @@
     }
 
     .form-contact form input {
-        width: 100%;
+        width: 47%;
     }
 
     .form-contact form button {

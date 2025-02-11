@@ -5,13 +5,14 @@
   --font-size: 16px;
   --color-gray: #9ca3af;
   --color-gray-black: #53565a;
-  --bg-color: #242424;
+  --bg-color: #1d1c20;
   --color-primary: #67b8cc;
   --color-white: #ffffff;
   --color-bg-nav: #2b3336;
   --header-height: 4.5rem;
   --color-black: #000000;
   --color-bg-transparent: rgba(0, 0, 0, 0.178);
+  --max-width: 1024px;
 }
 
 /* Reset */
@@ -37,6 +38,8 @@ body {
   color: var(--color-white);
   width: 100%;
   height: 100vh;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 a {
